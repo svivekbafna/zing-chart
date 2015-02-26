@@ -2,9 +2,28 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Hello ZingChart World</title>
+    <script src="scripts/zingchart.min.js"></script>
+    <script>
+        var chartData={
+            "type": "bar",
+            "series": [
+                { "values": [35, 42, 67, 89, 25, 34, 67, 85 ] },
+                { "values": [28, 57, 43, 56, 78, 99, 67, 28 ] }
+            ]
+        };
+        window.onload=function(){
+            zingchart.render({
+                id:'chartDiv',
+                height:400,
+                width:600,
+                data:chartData
+            });
+        };
+    </script>
 </head>
 <body>
+<div id="chartDiv"></div>
 
 </body>
 </html>
