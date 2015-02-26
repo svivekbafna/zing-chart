@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>zing chart</title>
+</head>
+<body>
+<div id="chart"></div>
+<script src="scripts/zingchart.min.js"></script>
+<script>
+    window.onload = function() {
+        zingchart.render({
+            id: "chart",
+            data: {
+                type: "line",
+                series: [{ values: [15,10,10,25,10,15] }]
+            }
+        });
+    };
+</script>
+</body>
+</html>
