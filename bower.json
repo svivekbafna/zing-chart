@@ -1,0 +1,11 @@
+{
+  "name": "zing-chart",
+  "description": "Hello, Zing Chart",
+  "version": "0.0.0",
+  "homepage": "https://github.com/svivekbafna/zing-chart.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "zingchart": ""
+  }
+}
