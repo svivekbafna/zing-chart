@@ -5,11 +5,16 @@
     <title>Bar Chart</title>
     <script src="bower_components/zingchart/zingchart.min.js"></script>
     <script>
-        var chartData={
-            "type": "bar",
+        var chartData= {
+            "type": "bar3d",
+            "3d-aspect": {
+                "true3d": 0,
+                "y-angle": 10,
+                "depth": 25
+            },
             "series": [
-                { "values": [35, 42, 67, 89, 25, 34, 67, 85 ] },
-                { "values": [28, 57, 43, 56, 78, 99, 67, 28 ] }
+                {"values": [35, 42, 67, 89, 25, 34, 67, 85]},
+                {"values": [28, 57, 43, 56, 78, 99, 67, 28]}
             ]
         };
         window.onload=function(){
